@@ -21,7 +21,7 @@ class App extends Component {
         input: '',
         imageUrl: '',
         box: {},
-        route: 'signin',
+        route: 'home',
         isSignedIn: false,
         user: {
           id: '',
@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   loadUser = (data) => {
-    this.setState({user: {
+    this.setState({user: {  
       id: data.id,
       name: data.name,
       email: data.email,
